@@ -27,9 +27,8 @@
         .flex-container{
                 display: flex;
                 flex-direction: row;
-                background-color: #006a6a;
                 justify-content: space-around;
-                padding: 20px;
+              
         }
         .header-title{
             color: #006f6f;
@@ -42,9 +41,62 @@
             font-size: 20px;
             font-weight: 500;
             margin-bottom: 15px;
-            
-
+            }
+        
+        .col-1{
+            background-color: #006a6a;
+            width: 50%;
+            padding: 20px;
+            color: #fff;
         }
+
+        .col-2{
+            background-color: #009e9e; 
+            width: 50%;
+            padding: 20px;
+            color: #fff;
+        }
+        
+        .mensal{
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .valor{
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        .mes{
+            font-size: 15px;
+            font-style: italic;
+            margin-left: 15px;
+        }
+
+        .cancele{
+            font-weight: 400;
+            margin-bottom: 17px;
+        }
+
+
+        .button{
+            color: #006a6a;
+            font-size: 16px;
+            border-radius: 4px;
+            width: 100%;
+            padding: 15px 32px;
+            margin-bottom: 20px;
+            border: none;
+            background-color: #ccc;
+            cursor: pointer;
+        }
+
+        .button:hover{
+            background-color: #e9e9e9;
+        }
+
+        
 
 
     </style>
@@ -64,10 +116,24 @@
             </div>
         </div>
         <di class="flex-container">
-            <div >
-                Coluna 1
+            <div class="col-1">
+                <div class="mensal">
+                    Assinatura mensal:
+                </div>
+                <div>
+                        <span class="valor">R$ 99,99</span>
+                         <span class="mes">por mês.</span>
+                </div>
+                <div class="cancele">
+                    Cancele a qualquer momento.
+                </div>
+                <div>
+                    <button class="button">
+                        Assine Agora
+                    </button>
+                </div>
             </div>
-            <div>
+            <div class="col-2">
                 Coluna 2
             </div>
         </di>
